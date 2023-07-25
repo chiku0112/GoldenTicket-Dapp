@@ -1,0 +1,62 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;*/
+  /* font-family: 'Open Sans',sans-serif; */
+  /* font-family: 'M PLUS 1p', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./bg.png');
+  background-size: 200% 180%;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: gradientTransform;
+  background-repeat: no-repeat;
+} */
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}  */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 10;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./bg.png');
+  background-position: top center;
+  background-repeat: repeat;
+  background-size: 150% 1000px;
+  /* Introducing a subtle scale animation
+  animation: subtleZoom 30s infinite alternate; */
+}
+
+/* Media query targeting a resolution of 3072x1920, common for some 16-inch laptops */
+@media screen and (width: 3072px) and (height: 1920px) {
+  body {
+      background-size: 3072px 1920px;
+  }
+}
+
+@keyframes subtleZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); } /* Slight zoom to create the "breathe" effect */
+}
+code {
+  font-family: 'Roboto Mono', monospace;
+}
